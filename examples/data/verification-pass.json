@@ -1,0 +1,11 @@
+{
+  "task": "prompt_B 的独立验证结果",
+  "verifier": "独立会话，未见生成过程",
+  "gates": {
+    "target_metric_reached": true,
+    "within_budget": true,
+    "solution_self_constructed": true,
+    "all_stages_completed": true,
+    "correctness_ge_threshold": true
+  }
+}

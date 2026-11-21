@@ -1,0 +1,12 @@
+{
+  "task": "API 网关配置调优（越低越好指标示例：P95 延迟）",
+  "metric": "P95 延迟（ms，越低越好）→ 已转换为 score=-延迟，越高越好",
+  "local_definition": "离线小样本（100 请求）P95 延迟的负值",
+  "global_definition": "真实流量回放（全量）P95 延迟的负值，由独立验证器给出",
+  "note": "原始延迟越低越好，脚本按越高越好排序，故先取负值转换；原始延迟见 examples/more-examples.md",
+  "candidates": [
+    {"name": "cfg_fast", "local": -80, "global": -150},
+    {"name": "cfg_balanced", "local": -95, "global": -92},
+    {"name": "cfg_safe", "local": -110, "global": -100}
+  ]
+}

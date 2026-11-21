@@ -1,0 +1,11 @@
+{
+  "task": "客服机器人提示词优化（低风险示例，非模型压缩）",
+  "metric": "任务成功率（0-1，越高越好）",
+  "local_definition": "子集A（20条样本）上的成功率",
+  "global_definition": "完整测试集（200条样本）上的成功率，由独立验证器给出",
+  "candidates": [
+    {"name": "prompt_A", "local": 0.91, "global": 0.78},
+    {"name": "prompt_B", "local": 0.88, "global": 0.86},
+    {"name": "prompt_C", "local": 0.87, "global": 0.85}
+  ]
+}

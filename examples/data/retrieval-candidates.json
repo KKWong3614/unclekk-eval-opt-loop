@@ -1,0 +1,12 @@
+{
+  "task": "文档检索参数选择（局部与全局一致场景）",
+  "metric": "检索召回率（0-1，越高越好）",
+  "local_definition": "验证集子集（50 条 query）召回率",
+  "global_definition": "完整测试集（500 条 query）召回率，由独立验证器给出",
+  "note": "本例局部最优恰与全局一致，演示脚本的另一种输出分支；一致不代表可省掉复核",
+  "candidates": [
+    {"name": "k10_localbest", "local": 0.93, "global": 0.90},
+    {"name": "k20", "local": 0.91, "global": 0.89},
+    {"name": "k5", "local": 0.88, "global": 0.87}
+  ]
+}
